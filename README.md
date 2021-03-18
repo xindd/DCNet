@@ -3,7 +3,6 @@
   Deconvolution network (DCNet), an "explainable" artificial neural network model wascreated to infer cell content from bulk RNA-Seq samples. It embeds the relationship between 434 cells and 9078 marker genes in a neural network,and uses a hidden layer to characterize the cell type and content.
     
   # INSTALL
-    git clone https://github.com/xindd/DCNet.git
     tar zxvf DCNet-0.0.1.tar.gz
     cd DCNet-0.0.1
     python setup.py install
