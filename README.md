@@ -1,9 +1,5 @@
   # DCNet Package
-  ###Using deep learning to unravel the cell profile from bulk expression data
-    Deconvolution network (DCNet), an "explainable" artificial neural network model was
-    created to infer cell content from bulk RNA-Seq samples. 
-    It embeds the relationship between 434 cells and 9078 marker genes in a neural network,
-    and uses a hidden layer to characterize the cell type and content.
+  ### Using deep learning to unravel the cell profile from bulk expression data Deconvolution network (DCNet), an "explainable" artificial neural network model wascreated to infer cell content from bulk RNA-Seq samples. It embeds the relationship between 434 cells and 9078 marker genes in a neural network,and uses a hidden layer to characterize the cell type and content.
     
   # INSTALL
     git clone https://github.com/xindd/DCNet.git
@@ -42,7 +38,7 @@
             # odc.plotErrors(errors)
             odc.saveNet(output_dir, extra=f'DCNetnoise-D{dp}')
   ```
-  #Fine train DCNet
+  # Fine train DCNet
   ```python
     import pandas as pd
     import pickle
