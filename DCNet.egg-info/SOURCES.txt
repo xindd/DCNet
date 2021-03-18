@@ -1,0 +1,11 @@
+README.md
+setup.py
+DCNet/__init__.py
+DCNet/build.py
+DCNet/dcutils.py
+DCNet/models.py
+DCNet.egg-info/PKG-INFO
+DCNet.egg-info/SOURCES.txt
+DCNet.egg-info/dependency_links.txt
+DCNet.egg-info/top_level.txt
+test/test_model.py
