@@ -35,7 +35,6 @@ class DCNet(gluon.nn.Block):
 class DCNetNoise(gluon.nn.Block):
     def __init__(self, position_mat, output_units, dropout=0.1):
         super().__init__()
-        # 确定输入神经元和中间层神经元数目
         self.position = nd.array(position_mat)
         input_units, middle_units = position_mat.shape
 
