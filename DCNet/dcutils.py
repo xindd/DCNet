@@ -21,7 +21,7 @@ def abline(slope, intercept):
     y_vals = intercept + slope * x_vals
     plt.plot(x_vals, y_vals, '--')
 
-#迭代器
+
 def dataIter(data, batch_size):
     features = data['x']
     output_y = data['y']
@@ -32,7 +32,7 @@ def dataIter(data, batch_size):
         j = nd.array(indices[i: min(i + batch_size, num_examples)])
         yield features.take(j), output_y.take(j)
 
-# 加载数据
+
 def loadData(dir):
     with open(dir, 'rb') as f:
         save_data = pickle.load(f)
@@ -40,13 +40,13 @@ def loadData(dir):
            save_data['test_X'], save_data['test_y'], \
            save_data['train_label'], save_data['test_label']
 
-# 加载位置矩阵
+
 def loadPosition(dir):
     with open(dir, 'rb') as f:
         save_data = pickle.load(f)
     return save_data['marker_gene_exp'], save_data['non_marker_gene_exp'], save_data['position_mat']
 
-# 评估测试误差
+
 def evaluateAccuracy(net, data_iter, loss):
     error, num = 0.0, 0
     for X,y in data_iter:
@@ -56,7 +56,7 @@ def evaluateAccuracy(net, data_iter, loss):
         num += X.shape[0]
     return error / num
 
-# 训练DCnet
+
 def trainDCnet(net, train_data, test_data, trainer,  loss, epochs=5, batch_size=32):
     train_log = []
     for epoch in tqdm.tqdm(range(epochs), desc='train epochs'):
@@ -77,7 +77,6 @@ def trainDCnet(net, train_data, test_data, trainer,  loss, epochs=5, batch_size=
         # train_log.append([epoch, train_l_sum/n, train_log])
     return train_log
 
-# 微调
 def fineTrain(net, train_data, trainer1, trainer2, loss, epochs=5):
     train_log = []
     net.collect_params().reset_ctx(mx.cpu())
