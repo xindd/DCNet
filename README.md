@@ -11,7 +11,7 @@ DCNet depends on mxnet, pandas, numpy modules. You can install them by  `require
   # INSTALL
     git clone https://github.com/xindd/DCNet.git
     cd DCNet
-    pip install -r requirements
+    pip install -r requirements.txt
     python setup.py install
 
    ## Dataset prepare
