@@ -16,19 +16,19 @@ DCNet depends on mxnet, pandas, numpy modules. You can install them by  `require
     python setup.py install
 
    ## Dataset prepare
-1.[DCNet params:](https://github.com/xindd/DCNet-Use/net_M434_adam_T600_DCNetBnoise-D1.params) Contains DCNet parameters (weights, biases) saved based on `net.save_parameters(file_name)`.
+1.[DCNet params:](https://github.com/xindd/DCNet-Use/blob/main/net_M434_adam_T600_DCNetBnoise-D1.params) Contains DCNet parameters (weights, biases) saved based on `net.save_parameters(file_name)`.
 
 To train the DCNet model, its parameters are set as adam optimizer, relu activation function, L2loss loss function, learning rate 1e-4, number of iterations 600, 256 samples per batch, cpu training respectively.
 
-2.[Relation matrix:](https://github.com/xindd/DCNet-Use/relation_matrix.pkl) A zero-one matrix containing the correspondence between genes and cells.
+2.[Relation matrix:](https://github.com/xindd/DCNet-Use/blob/main/relation_matrix.pkl) A zero-one matrix containing the correspondence between genes and cells.
   
-3.[Index](https://github.com/xindd/DCNet-Use/index.pkl). Each neuron of DCNet corresponds to a specific gene. 
+3.[Index](https://github.com/xindd/DCNet-Use/blob/main/index.pkl). Each neuron of DCNet corresponds to a specific gene. 
 This file stores the set of genes corresponding to input and output neurons.
 
 4.Input and output data matrix of gene expression profiles.
 Each column is a sample, and each row should be a human gene symbol.
-Please see [demo_data](https://github.com/xindd/DCNet-Use/demo_data.pkl) as an example. A log2(x+1) transformation of the expression value is recommended.
+Please see [demo_data](https://github.com/xindd/DCNet-Use/blob/main/demo_data.pkl) as an example. A log2(x+1) transformation of the expression value is recommended.
    ## Running DCNet
-   detail in [demo](https://github.com/xindd/DCNet-Use/demo.ipynb)
+   detail in [demo](https://github.com/xindd/DCNet-Use/blob/main/demo.ipynb)
    
     
