@@ -15,7 +15,7 @@ DCNet depends on mxnet, pandas, numpy modules. You can install them by  `require
     python setup.py install
 
    ## Dataset prepare
-1.[DCNet params:](https://github.com/xindd/DCNet-Use/blob/main/net_M434_adam_T600_DCNetBnoise-D1.params) Contains DCNet parameters (weights, biases) saved based on `net.save_parameters(file_name)`.
+1.[DCNet params:](https://github.com/xindd/DCNet-Use/blob/main/net_M434_adam_T600_DCNetBnoise-D1.params) Contains DCNet parameters (weights, biases) saved by `net.save_parameters(file_name)`.
 
 To train the DCNet model, its parameters are set as adam optimizer, relu activation function, L2loss loss function, learning rate 1e-4, number of iterations 600, 256 samples per batch, cpu training respectively.
 
@@ -28,6 +28,6 @@ This file stores the set of genes corresponding to input and output neurons.
 Each column is a sample, and each row should be a human gene symbol.
 Please see [demo_data](https://github.com/xindd/DCNet-Use/blob/main/demo_data.pkl) as an example. A log2(x+1) transformation of the expression value is recommended.
    ## Running DCNet
-   detail in [demo](https://github.com/xindd/DCNet-Use/blob/main/demo.ipynb)
+   Detail in [demo](https://github.com/xindd/DCNet-Use/blob/main/demo.ipynb)
    
     
